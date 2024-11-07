@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const audio = document.querySelector('audio');
-    audio.muted = false;
-    audio.play();
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a');
