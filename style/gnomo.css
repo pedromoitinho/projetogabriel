@@ -1,0 +1,75 @@
+html{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:auto;
+    font-smooth:always;
+  }
+body {
+  margin: 0; }
+
+.backgroundMain {
+  background-image: url("../assets/gnome_village.png");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .backgroundMain {
+      background-size: contain;
+      background-position: center;
+      height: 100dvh; 
+    } 
+}
+  @media screen and (min-width: 1440px) {
+    .backgroundMain {
+      background-size: contain;
+      background-position: center; 
+    } 
+}
+  @media screen and (orientation: landscape) {
+    .backgroundMain {
+      background-size: contain;
+      height: 100vh; 
+    } 
+}
+
+.navBar {
+  height: 100px;
+  width: 70vw;
+  display: flex;
+  align-items: center; 
+  @media screen and (max-width: 768px) {
+    margin-top:6rem;
+    margin-right:3rem;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    margin-top:5rem;
+    margin-right:8rem;
+  }
+
+}
+
+.button {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid rgba(32, 32, 32, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  @media screen and (max-width:768px){
+    padding:0.7rem;
+}
+  &:hover{
+    opacity:0.8;
+    cursor:pointer;
+    width:10px;
+  }
+}
+  

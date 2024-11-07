@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta content="UTF-8">
+        <link rel="stylesheet" href="./style/style.css">
+        <title>Jogo</title>
+    </head>
+    <body>
+        <audio autoplay preload="auto" loop>
+            <source src="./assets/viajando.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <section class="backgroundMain">
+            <div id="loadingOverlay" class="loading-overlay">
+                <div class="loader"></div>
+              </div>
+            <div class="storyContainer">
+                <h1 id="showHidden">Passe o mouse sobre mim</h1>
+                <h1 id="hide">O aventureiro está cansado para onde ele vai?</h1>
+                <div class="buttonContainer">
+                    <a class="button" id="gnomo" href="./pages/gnomo.html">Vila dos gnomos</a>
+                    <a class="button" id="acamp">Acampamento</a>
+                </div>
+            </div>
+
+        </section>
+        <script src="./script/script.js"></script>
+    </body>
+</html>
